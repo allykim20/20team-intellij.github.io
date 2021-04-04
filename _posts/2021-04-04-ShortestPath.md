@@ -227,7 +227,7 @@ long beforeTime = System.currentTimeMillis();
 
 
 
-## 정점의 수에 따라 비교 횟수
+## 정점의 수에 따라 실행시간
 
 ​    
 
