@@ -228,7 +228,7 @@ public static void main(String[] args) {
   | ---- | ---- | ---- | ---- | ----- |
   | 시간 | 5    | 10   | 48   | 1026  |
 
-![2](https://user-images.githubusercontent.com/80369791/113506160-23902800-957e-11eb-8489-bdba6cdf68ba.png)
+![2](https://user-images.githubusercontent.com/80369791/113506160-23902800-957e-11eb-8489-bdba6cdf68ba.png) 
 
 + 이론적으로 실행 시켰을 경우에 나오는 그래프
 
