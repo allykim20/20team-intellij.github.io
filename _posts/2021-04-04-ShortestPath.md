@@ -202,7 +202,13 @@ public static void main(String[] args) {
 
 ​    ![capture](https://postfiles.pstatic.net/MjAyMTA0MDRfMTQ2/MDAxNjE3NTI5NzExNTg5.AYELsbteeO_EXfzp9mbJ_wih8JABUs99bMDif3qJxAEg.KrYYCsXVMc4J0J6bFpA8Ve-EgRm54M8ShXOvp-_RTXog.PNG.hongsubakgame/image.png?type=w966)![capture](https://postfiles.pstatic.net/MjAyMTA0MDRfMTk2/MDAxNjE3NTMwMjY4MTMy.Ai4tldF-BwMHEXAx-7f8x5y5r39YzCazVwlViF5hTgYg.LtbRIRfUNJJ7p-q8qyXsdINz6VetUkWbs4HVg8MaWNYg.PNG.hongsubakgame/image.png?type=w966)
 
+![3](https://user-images.githubusercontent.com/80369791/113506162-2559eb80-957e-11eb-9cde-6304be75bc4d.png)     
 
++ 정점의 개수를 10개 씩 늘릴 경우
+
+![2](https://user-images.githubusercontent.com/80369791/113506160-23902800-957e-11eb-8489-bdba6cdf68ba.png)
+
++ 정점의 개수를 10의 n승 만큼 늘릴 경우
 
 
 
