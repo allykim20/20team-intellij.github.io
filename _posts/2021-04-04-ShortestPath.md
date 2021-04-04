@@ -233,6 +233,10 @@ public static void main(String[] args) {
 + 이론적으로 실행 시켰을 경우에 나오는 그래프
 
   ![6](https://user-images.githubusercontent.com/80369791/113508681-52ad9600-958c-11eb-9dcc-b5dc854ead87.png)
+  
+  ---
+  
+  
 
 ## 실행시간 측정
 
