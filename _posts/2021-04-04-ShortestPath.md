@@ -73,7 +73,148 @@ date:   2021-04-04 16:43:44 +0900
 
 ---
 
+# 소스코드
+
 ​    
 
-## 소스 코드
+### 시작 정점 방문 표시
+
+```
+distance[v] = 0;
+        visit[v] = true;
+```
+
+​    
+
+## distance 초기값 저장
+
+```
+ for(int i = 0; i<g.n; i++) {
+            if(!visit[i] && g.weight[v][i] !=0){
+                distance[i] = g.weight[v][i];
+            }
+        }
+```
+
+​    
+
+## 모든 정점을 방문 하면서 최단 경로 찾기
+
+```
+for(int j = 0; j<g.n-1; j++){
+            int min = Integer.MAX_VALUE;
+            int min_pos = -1;
+
+            //방문하지 않은 정점 중에서 최단 거리의 정점 고르기
+            for(int i = 0; i<g.n; i++){
+                if(distance[i] < min && !visit[i]){
+                    min = distance[i]; // 최단 거리
+                    min_pos = i; // 최단 거리의 인덱스(정점)
+                }
+            }
+
+            visit[min_pos] = true; // 선택된 정점은 방문 표시해줌
+            for(int i = 0; i<g.n; i++){
+                if(!visit[i] && g.weight[min_pos][i]!=0) // 방문하지 않은 정점일 때만
+                    if(distance[min_pos] + g.weight[min_pos][i] < distance[i]) // 선택된 정점을 통한 거리(distance 값)가 원래 거리보다 짧으면
+                        distance[i] = distance[min_pos] + g.weight[min_pos][i]; // 인접 정점의 distance 값 업데이트
+            }
+        }
+```
+
+​    
+
+## 최단 경로의 거리 출력
+
+```
+for(int i = 0; i<g.n; i++) {
+            System.out.print(distance[i]+" ");
+        }
+```
+
+​    
+
+## Graph
+
+```
+private static class Graph {
+        int n; // 정점의 개수
+        int[][] weight; // 가중치
+        public Graph(int n){
+            this.n = n;
+            weight = new int[n][n];
+        }
+        public void value(int i, int j, int w){
+            weight[i][j] = w;
+            weight[j][i] = w;
+        }
+    }
+```
+
+​    
+
+## Main
+
+```
+public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+        System.out.print("정점의 개수 : ");
+        int n = scanner.nextInt();
+        Graph g = new Graph(n);
+        int edge = random.nextInt(5) + n;
+
+        int num = 0;
+        for(int i = 0; i<edge; i++) {
+            int x = num;
+            if(num>n-1){
+                x = random.nextInt(n);
+            }
+            int y = random.nextInt(n);
+            if(x == y){
+                while(x==y){
+                    y = random.nextInt(n);
+                }
+            }
+            int z = random.nextInt(20) + 1;
+            System.out.println(x+" "+y+" "+z);
+            g.value(x,y,z);
+            num++;
+        }
+
+        System.out.print("시작 정점 : ");
+        int v = scanner.nextInt();
+        dijkstra(g, v);
+    }
+```
+
+​    
+
+## 코드 설명
+
+: 정점의 개수를 입력하면 그래프와 가중치를 랜덤으로 생성된다.    
+
+시작 정점을 입력하면 최단 거리를 dijkstra함수를 통해 구한다.    
+
++ 입력 : 정점의 개수, 시작 정점    
+
+- 출력 : 그래프, 최단 경로의 거리    
+
+​    ![capture](https://postfiles.pstatic.net/MjAyMTA0MDRfMTQ2/MDAxNjE3NTI5NzExNTg5.AYELsbteeO_EXfzp9mbJ_wih8JABUs99bMDif3qJxAEg.KrYYCsXVMc4J0J6bFpA8Ve-EgRm54M8ShXOvp-_RTXog.PNG.hongsubakgame/image.png?type=w966)![capture](https://postfiles.pstatic.net/MjAyMTA0MDRfMTk2/MDAxNjE3NTMwMjY4MTMy.Ai4tldF-BwMHEXAx-7f8x5y5r39YzCazVwlViF5hTgYg.LtbRIRfUNJJ7p-q8qyXsdINz6VetUkWbs4HVg8MaWNYg.PNG.hongsubakgame/image.png?type=w966)
+
+
+
+
+
+## 실행시간 측정
+
+- 실행 전 시간과 실행 후 시간의 차이
+```java
+long beforeTime = System.currentTimeMillis();
+        dijkstra(g, v);
+        System.out.println();
+        long afterTime = System.currentTimeMillis();
+        long secDiffTime = (afterTime - beforeTime);
+        System.out.println("시간차이 : "+secDiffTime);
+```
 
