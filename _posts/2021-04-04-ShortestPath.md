@@ -4,7 +4,7 @@ title:  "ShortestPath.md"
 date:   2021-04-04 16:43:44 +0900
 ---
 
-# Shortest Path <최단 경로 찾기>
+# Shortest Path <최단 경로>
 
 ---
 
