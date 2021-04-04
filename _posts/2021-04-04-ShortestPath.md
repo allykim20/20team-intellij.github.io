@@ -208,6 +208,25 @@ public static void main(String[] args) {
 
 ​    
 
+​    
+
+## 실행시간 측정
+
+- 실행 전 시간과 실행 후 시간의 차이
+
+```java
+long beforeTime = System.currentTimeMillis();
+        dijkstra(g, v);
+        System.out.println();
+        long afterTime = System.currentTimeMillis();
+        long secDiffTime = (afterTime - beforeTime);
+        System.out.println("시간차이 : "+secDiffTime);
+```
+
+---
+
+
+
 ## 정점의 수에 따라 비교 횟수
 
 ​    
@@ -233,23 +252,7 @@ public static void main(String[] args) {
 
   ![6](https://user-images.githubusercontent.com/80369791/113508681-52ad9600-958c-11eb-9dcc-b5dc854ead87.png)    
   
-  ---
-  
   ​    
-
-## 실행시간 측정
-
-- 실행 전 시간과 실행 후 시간의 차이
-```java
-long beforeTime = System.currentTimeMillis();
-        dijkstra(g, v);
-        System.out.println();
-        long afterTime = System.currentTimeMillis();
-        long secDiffTime = (afterTime - beforeTime);
-        System.out.println("시간차이 : "+secDiffTime);
-```
-
-​    
 
 ---
 
