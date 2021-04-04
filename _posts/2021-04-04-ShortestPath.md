@@ -218,9 +218,8 @@ public static void main(String[] args) {
   | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
   | 시간 | 5    | 6    | 7    | 7    | 8    | 9    | 9    | 11   | 12   | 15   |
 
-  ![3](https://user-images.githubusercontent.com/80369791/113508652-2eea5000-958c-11eb-9185-31621dc8bbd6.png)
 
-
+![3](https://user-images.githubusercontent.com/80369791/113508652-2eea5000-958c-11eb-9185-31621dc8bbd6.png) 
 
 + 정점의 개수를 10의 n승 만큼 늘릴 경우
 
@@ -232,11 +231,11 @@ public static void main(String[] args) {
 
 + 이론적으로 실행 시켰을 경우에 나오는 그래프
 
-  ![6](https://user-images.githubusercontent.com/80369791/113508681-52ad9600-958c-11eb-9dcc-b5dc854ead87.png)
+  ![6](https://user-images.githubusercontent.com/80369791/113508681-52ad9600-958c-11eb-9dcc-b5dc854ead87.png)    
   
   ---
   
-  
+  ​    
 
 ## 실행시간 측정
 
@@ -249,6 +248,8 @@ long beforeTime = System.currentTimeMillis();
         long secDiffTime = (afterTime - beforeTime);
         System.out.println("시간차이 : "+secDiffTime);
 ```
+
+​    
 
 ---
 
