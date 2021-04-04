@@ -10,6 +10,8 @@ date:   2021-04-04 16:43:44 +0900
 
 – 주어진 가중치 그래프에서 어느 한 출발점에서 또 다른 도착점까지의 최단 경로를 찾는 문제이다.
 
+ 
+
 
 
 ##  다익스트라(Dijkstra) 의 최단 경로 알고리즘
@@ -19,19 +21,25 @@ date:   2021-04-04 16:43:44 +0900
 
 ---
 
+
+
+
+
 ## 다익스트라 알고리즘 동작 과정
 
 ![이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcofnIo%2FbtqEuY3ZsSW%2FTnQX9kZ9RpyYtvElsrkMz1%2Fimg.gif)
 
-<u><expamle></u>
+<expamle>
 
 ---
 
 
 
+
+
 ## Shortest Path(G,s)
 
-> 입력: 가중치 그래프 G=(V,E), |V|=n, |E|=m
+> 입력: 가중치 그래프 G=(V,E), V=n, E=m
 >
 > 출력: 출발점 s로부터 (n-1)개의 점까지 각각 최단 거리를 저장한 배열 D
 >
@@ -47,7 +55,11 @@ date:   2021-04-04 16:43:44 +0900
 
 ---
 
- ##  시간 복잡도
+
+
+
+
+## 시간 복잡도
 
 ### while-루프가 (n-1)번 반복되고, 1회 반복될 때
 
@@ -59,6 +71,10 @@ $$
 $$
 
 ---
+
+
+
+
 
 ## 소스 코드
 
