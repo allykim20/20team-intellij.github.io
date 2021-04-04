@@ -10,7 +10,7 @@ date:   2021-04-04 16:43:44 +0900
 
 – 주어진 가중치 그래프에서 어느 한 출발점에서 또 다른 도착점까지의 최단 경로를 찾는 문제이다.
 
- 
+​    
 
 ##  다익스트라(Dijkstra) 의 최단 경로 알고리즘
 
@@ -19,11 +19,11 @@ date:   2021-04-04 16:43:44 +0900
 
 ---
 
-
+   
 
 ## 다익스트라 알고리즘 동작 과정
 
-
+   
 
 ![이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcofnIo%2FbtqEuY3ZsSW%2FTnQX9kZ9RpyYtvElsrkMz1%2Fimg.gif)
 
