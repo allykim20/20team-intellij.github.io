@@ -63,34 +63,19 @@ date:   2021-04-11 11:43:44 +0900
 > 출력: 배낭에 담은 물건 리스트 iVal과 배낭에 담은 물건 가치의 합 totalValue
 
 > 1. 각 물건에 대해 단위 무게 당 가치를 계산한다.
->
-> 2. 물건들을 단위 무게 당 가치를 기준으로 내림차순으로 정렬하고, 정렬된 물건 리스트를 ItemValue 라고 하자.
->
-> 3.  iVal=∅, wt=0, totalValue=0 iVal은 배낭에 담을 물건 리스트,    
->
->    (1) wt는 배낭에 담긴 물건들의 무게의 합, totalValue는 배낭에 담긴 물건들의 가치의 
->
-> 4. ItemValue에서 단위 무게 당 가치가 가장 큰 물건 x를 가져온다.
->
+>2. 물건들을 단위 무게 당 가치를 기준으로 내림차순으로 정렬하고, 정렬된 물건 리스트를 ItemValue 라고 하자.
+> 3. iVal=∅, wt=0, totalValue=0 iVal은 배낭에 담을 물건 리스트,    (1) wt는 배낭에 담긴 물건들의 무게의 합, totalValue는 배낭에 담긴 물건들의 가치의 
+>4. ItemValue에서 단위 무게 당 가치가 가장 큰 물건 x를 가져온다.
 > 5. while ( (wt+x의 무게) ≤ capacity ) { 
->
-> 6. x를 iVal에 추가시킨다.
->
+>6. x를 iVal에 추가시킨다.
 > 7. wt = wt+x의 무게
->
-> 8. totalValue = curVal+x의 가치
->
+>8. totalValue = curVal+x의 가치
 > 9. x를 ItemValue에서 제거한다.
->
-> 10. ItemValue에서 단위 무게 당 가치가 가장 큰 물건 x를 가져온다. }
->
+>10. ItemValue에서 단위 무게 당 가치가 가장 큰 물건 x를 가져온다. }
 > 11. if ((capacity-wt) > 0) { // 배낭에 물건을 부분적으로 담을 여유가 있으면 
->
-> 12. 물건 x를 (capacity-wt)만큼만 iVal에 추가한다.
->
+>12. 물건 x를 (capacity-wt)만큼만 iVal에 추가한다.
 > 13. totalValue = totalValue +(capacity-wt)만큼의 x의 가치 }
->
-> 14. return iVal, totalValue
+>14. return iVal, totalValue
 
 ​    
 
