@@ -32,10 +32,17 @@ date:   2021-04-11 11:43:44 +0900
 ​    
 
 ## 0-1 배낭 문제 (0/1 배낭 문제)
-
+ 
+ ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FITqjC%2FbtqCrjQKeFT%2FcY9kKEb3jQnkZgRjFxmss1%2Fimg.png)
+(*물건을 부분적으로 배낭에 넣을 수 없다) 
+ 
 > –부분 배낭 문제의 원형으로 물건을 통째로 배낭에 넣어야 한다.
+> 
+> –부분 배낭 문제와 모든 조건이 같으나, 물건을 부분적으로 배낭에 넣을 수 없다.
 >
-> –동적 계획 알고리즘, 백트래킹 기법, 분기 한정 기법으로 해결
+> –그리디 알고리즘으로 해결할 수 없으며, 동적 계획 알고리즘, 백트래킹(Backtracking) 기법, 분기 한정 기법(Branch-and-Bound)으로 해결
+> 
+> –최소의 비용으로 자원을 할당하는 문제
 
 ​    
 
@@ -225,4 +232,5 @@ static class ItemValue {
   
 ## 출처
   그림 위키피디아 https://en.wikipedia.org/wiki/Knapsack_problem
+  티스토리 블로그 https://source-sc.tistory.com/26
   책 알기 쉬운 알고리즘, 생능출판사, 양성봉
