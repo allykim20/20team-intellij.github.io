@@ -230,7 +230,7 @@ static class ItemValue {
 
   ![결과](https://user-images.githubusercontent.com/80369791/114277215-441c1e80-9a65-11eb-8bf1-4330c033da39.PNG)
   
-## 출처
-  그림 위키피디아 https://en.wikipedia.org/wiki/Knapsack_problem
-  티스토리 블로그 https://source-sc.tistory.com/26
-  책 알기 쉬운 알고리즘, 생능출판사, 양성봉
+출처  
+그림 - 위키피디아 https://en.wikipedia.org/wiki/Knapsack_problem  
+티스토리 블로그 https://source-sc.tistory.com/26  
+책 - 알기 쉬운 알고리즘, 생능출판사, 양성봉  
